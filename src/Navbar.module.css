@@ -1,0 +1,102 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+    background: rgb(173, 231, 217);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+.navheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logopic{
+    height: 40px;
+}
+.togglebtn{
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: rgb(21, 123, 232);
+  transition: all 0.3s linear;
+}
+.togglebtn:hover{
+    color: rgb(98, 162, 232);
+    transform: rotate(90deg);
+}
+li{
+    list-style: none;
+}
+.links a{
+    color: #023d9d;
+     font-size: 1rem;
+     font-weight: 400;
+     text-transform: capitalize;
+     text-decoration: none;
+     letter-spacing: 0.1rem;
+     display: block;
+     padding: 0.5rem 1rem;
+     transition: all 0.3s linear ;
+}
+.links a:hover{
+    background: hsl(202, 42%, 62%);
+    color:white;
+    padding-left: 1.5rem;
+}
+.socialIcons{
+    display: none;
+}
+.linkscontainer{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+@media screen and (min-width:950px){
+    .navContainer{
+        max-width: 1170px;
+        margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .navheader{
+        padding: 0;
+    }
+    .links{
+        display: flex;
+    }
+    .togglebtn{
+        display: none;
+    }
+    .linkscontainer{
+        height: auto !important ;
+    }
+   
+    .links a{
+        padding: 0;
+        margin: 0 0.5rem;
+        
+    }
+    .links a:hover{
+        padding: 0;
+        background: transparent;
+    }
+    .socialIcons {
+        display: flex;
+      }
+      .socialIcons a {
+        margin: 0 0.5rem;
+        color: hsl(205, 78%, 60%);
+        transition:all 0.3s linear;
+      }
+      .socialIcons a:hover {
+        color:hsl(205, 90%, 76%) ;
+      }
+}
