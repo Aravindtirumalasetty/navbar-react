@@ -1,11 +1,9 @@
 
-import './App.css';
-
-import Ecom from './Ecom';
+import Navbar from './Navbar';
 function App() {
   return (
     <div className="App">
-   <Ecom/>
+  <Navbar/>
     </div>
   );
 }
