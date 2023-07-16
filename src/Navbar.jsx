@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars,} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { links, social } from "./Data";
 
 import styles from "./Navbar.module.css";
@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav>
       <div className={`${styles.navContainer}`}>
         <div className={`${styles.navheader}`}>
-          <img src={logo} alt="logo" className={`${styles.logopic}`} />
+  
           <button className={`${styles.togglebtn}`} onClick={()=>setshowLinks(!showLinks)}>
             <FaBars />
           </button>
